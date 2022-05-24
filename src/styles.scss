@@ -1,0 +1,65 @@
+
+
+div.App {
+    display: grid;
+    place-items: center;
+    grid-gap: 10px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 100px 1fr 1fr;
+    height: auto;
+}
+
+div.banner-container {
+    grid-column: 1/4;
+
+    h1.banner-heading {
+        align-content: bottom;
+        background-color: #22223b;
+        color: #f2e9e4;
+        padding: 15px
+    }
+}
+
+div.gif-container{
+    grid-column: 2;
+    background-color: #22223b;
+    border-radius: 10px;
+    img.gif-file {
+        margin: 20px;
+
+    }
+}
+    .button-module{
+    background-color: #22223b;
+    border-radius: 20px;
+    grid-row: 3;
+    grid-column: 2;
+    width: 200px;
+    height: auto;
+    align-content: top;
+    align-self: baseline;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    // padding: 15px;
+    // margin: 3rem;
+    h3.heading-newGif{
+        color: #f2e9e4;
+        margin: 5px 0px;
+        
+    }
+    img.gif-img{
+        transition: all .2s ease-in-out;
+        width: 3rem;
+    }
+
+}
+.button-module:hover { 
+    transition-duration: 0.1s;
+    background-color: #d01b1bb6;
+    
+    }
+html,body {
+    height: 100%;
+    background-image: url(../public/pexels-magda-ehlers-1279813.jpg);
+  }
